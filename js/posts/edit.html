@@ -1,3 +1,15 @@
 <p>
   I'm in the edit html file
 </p>
+
+
+
+<form>
+  <input value="PostEditViewModel.post.title" data-ng-model="PostEditViewModel.post.title" />
+  <input value="PostEditViewModel.post.image" data-ng-model="PostEditViewModel.post.image" />
+  <input value="PostEditViewModel.post.body" data-ng-model="PostEditViewModel.post.body" style="width: 200px; height: 200px" />
+  <input value="PostEditViewModel.post.date" data-ng-model="PostEditViewModel.post.date" />
+
+  <button type= "button" data-ng-click="PostEditViewModel.update()">Save</button>
+  <button type="button" data-ng-click="PostEditViewModel.destroy()">Remove</button>
+</form>

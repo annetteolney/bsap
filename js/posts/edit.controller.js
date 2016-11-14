@@ -19,5 +19,14 @@
           $state.go("postIndex")
         });
       }
+
+      var vm = this;
+      vm.destroy = function(){
+        vm.post.$delete({id: $stateParams.id}).then(function(){
+          alert("You've removed this post")
+          $state.go("postIndex")
+        })
+      }
     }
+    
   }());
