@@ -25,6 +25,12 @@
       controller: "PostNewController",
       controllerAs: "PostNewViewModel"
     })
+    .state("postEdit", {
+      url: "/posts/:id/edit",
+      templateUrl: "js/posts/edit.html",
+      controller: "PostEditController",
+      controllerAs: "PostEditViewModel"
+    })
     .state("postShow", {
       url: "/posts/:id",
       templateUrl: "js/posts/show.html",
