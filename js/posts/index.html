@@ -3,7 +3,7 @@
 </p>
 
 <div data-ng-repeat="post in PostIndexViewModel.posts">
-  <p>
+  <a data-ui-sref="postShow({id: post.id})">
     {{post.title}}
   </p>
 </div>
