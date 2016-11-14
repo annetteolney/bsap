@@ -2,6 +2,8 @@
   Hello World, Im index in the js file
 </p>
 
+ <a data-ui-sref="postNew">Create new post</a>
+
 <div data-ng-repeat="post in PostIndexViewModel.posts">
   <a data-ui-sref="postShow({id: post.id})">
     {{post.title}}

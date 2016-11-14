@@ -19,6 +19,12 @@
       controller: "PostIndexController",
       controllerAs: "PostIndexViewModel"
     })
+    .state("postNew", {
+      url: "/posts/new",
+      templateUrl: "js/posts/new.html",
+      controller: "PostNewController",
+      controllerAs: "PostNewViewModel"
+    })
     .state("postShow", {
       url: "/posts/:id",
       templateUrl: "js/posts/show.html",
