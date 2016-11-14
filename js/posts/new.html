@@ -1,3 +1,12 @@
 <p>
   I am the form for new
 </p>
+
+<form>
+  <input placeholder="Title" data-ng-model="PostNewViewModel.post.title" />
+  <input placeholder="image" data-ng-model="PostNewViewModel.post.image" />
+  <input placeholder="body" data-ng-model="PostNewViewModel.post.body" style="width: 200px; height: 200px;"/>
+  <input type="date" data-ng-model="PostNewViewModel.post.date" />
+
+  <button type="button" data-ng-click="PostNewViewModel.create()">Add</button>
+</form>
